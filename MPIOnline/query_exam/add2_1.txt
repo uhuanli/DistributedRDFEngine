@@ -1,0 +1,4 @@
+<Napoleon_III_of_France>	rdfs:label	"Hong Kong"
+<!Hero>	rdfs:label	"Hong Kong"
+
+<!Hero>	rdf:type	<Napoleon_III_of_France>

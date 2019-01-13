@@ -1,0 +1,8 @@
+?x1 [] Hong Kong 
+?x1 rdfs:label ?x4 
+?x1 [] ?x2 
+?x1 [] ?x3 
+?x2 rdf:type <wordnet_village_108672738> 
+?x2 rdfs:label London 
+?x3 rdfs:label Paris 
+?x3 rdf:type <wordnet_site_108651247> 

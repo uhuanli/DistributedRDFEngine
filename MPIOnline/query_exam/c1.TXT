@@ -1,0 +1,7 @@
+?x1 y:hasFamilyName ?x4 
+?x1 rdf:type <wordnet_scientist_110560637> 
+?x1 [] ?x3 
+?x2 [] ?x3 
+?x2 rdf:type <wordnet_scientist_110560637> 
+?x2 y:hasFamilyName ?x5 
+?x3 rdf:type <wordnet_site_108651247> 

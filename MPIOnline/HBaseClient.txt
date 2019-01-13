@@ -1,0 +1,42 @@
+class _c{
+ ScannerID scannerOpen(const Text& tableName, const Text& startRow, const std::vector<Text> & columns);
+
+void get(std::vector<TCell> & _return, const Text& tableName, const Text& row, const Text& column);
+
+void getTableNames(std::vector<Text> & _return);
+
+void getRow(std::vector<TRowResult> & _return, const Text& tableName, const Text& row);
+
+void getRowWithColumns(std::vector<TRowResult> & _return, const Text& tableName, const Text& row, const std::vector<Text> & columns);
+
+void getRows(std::vector<TRowResult> & _return, const Text& tableName, const std::vector<Text> & rows);
+
+void getRowsWithColumns(std::vector<TRowResult> & _return, const Text& tableName, const std::vector<Text> & rows, const std::vector<Text> & columns);
+
+  HbaseClient(boost::shared_ptr< ::apache::thrift::protocol::TProtocol> prot) :
+    piprot_(prot),
+    poprot_(prot) {
+    iprot_ = prot.get();
+    oprot_ = prot.get();
+  }
+  HbaseClient(boost::shared_ptr< ::apache::thrift::protocol::TProtocol> iprot, boost::shared_ptr< ::apache::thrift::protocol::TProtocol> oprot) :
+    piprot_(iprot),
+    poprot_(oprot) {
+    iprot_ = iprot.get();
+    oprot_ = oprot.get();
+  }
+  boost::shared_ptr< ::apache::thrift::protocol::TProtocol> getInputProtocol() {
+    return piprot_;
+  }
+  boost::shared_ptr< ::apache::thrift::protocol::TProtocol> getOutputProtocol() {
+    return poprot_;
+  }
+}
+?x1	y:hasGivenName	?x5 
+?x1	y:hasFamilyName	?x6 
+?x1	rdf:type	<wordnet_scientist_110560637> 
+?x1	y:bornIn	?x2 
+?x1	y:hasAcademicAdvisor	?x4 
+?x2	y:locatedIn	<Switzerland> 
+?x3	y:locatedIn	<Germany> 
+?x4	y:bornIn	?x3 

@@ -1,0 +1,10 @@
+Initial:slave1
+In loadStree
+	In RootOfThisRank: 1 3 3
+	column push back :level3:
+	open scanner
+	scannerGet
+	value.size = 0
+	OUT RootOfThisRank
+Out loadStree
+Finalize:slave1
